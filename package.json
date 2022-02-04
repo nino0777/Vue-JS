@@ -1,0 +1,26 @@
+{
+  "name": "vue.js-vurso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nino0777/Vue-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nino0777/Vue-JS/issues"
+  },
+  "homepage": "https://github.com/nino0777/Vue-JS#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "vue-filters": "^0.1.6"
+  }
+}

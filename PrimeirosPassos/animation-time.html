@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+    
+    
+    <div id="app">
+        <!--    <transition name="animation-first" 
+            enter-active-class="bounceIn" 
+            leave-active-class="bounceOut"
+            :duration="800"
+            >
+        -->
+        
+        <transition name="animation-first" 
+        enter-active-class="animated rollIn" 
+        leave-active-class="animated zoomOut"
+        :duration="{enter: 400, leave: 100}"
+        >
+        <h2 v-if="show">HCode Treinamentos Animações</h2>
+        
+    </transition>
+    <h2 v-if="show">Djalma, bora gravar</h2>
+    <button @click="show = !show">Animar</button>
+    
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+<script src="/PrimeirosPassos/script.js"></script>
+</body>
+
+</html>

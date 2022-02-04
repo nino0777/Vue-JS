@@ -5,23 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passagem de Dados</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>Vue.js</title>
 </head>
-<div id="app">
-
-    {{name}} {{message}}
-</div>
 
 <body>
 
 
+    <div id="app">
 
+        <h1 v-bind:title="tagMessage">Olá</h1>
+
+        <h2> Essa mensagem em letras garrafais {{message.toUpperCase()}}</h2>
+
+
+        {{name}}
+        <p>Meu nome é {{person.name}} e eu tenho {{person.age}}</p>
+
+        <span v-html="tag"></span>
+
+        {{tag}}
+
+
+    </div>
 
 
 
     <script src="script.js"></script>
-    <script src="/node_modules/vue/dist/vue.min.js"></script>
 </body>
 
 </html>

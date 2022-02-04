@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passagem de Dados</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>Vue.js</title>
 </head>
-<div id="app">
-
-    {{name}} {{message}}
-</div>
 
 <body>
 
 
+    <div id="app">
 
+     <h1>{{message}}</h1>
+
+     <input type="text" name="" placeholder="Digite uma nova messagem" v-on:blur="replaceMessage($event.target.value)" id="">
+
+    </div>
 
 
 
     <script src="script.js"></script>
-    <script src="/node_modules/vue/dist/vue.min.js"></script>
 </body>
 
 </html>

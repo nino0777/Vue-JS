@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretivas v-slot</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    
+    <div id="app">
+        
+   <text-component>
+
+<template v-slot:header>
+<h2>Esse é o cabeçalho</h2>
+        
+    <h2>Esse é o cabeçalho</h2>
+</template>
+
+       Glaucio Daniel
+   </text-component>
+   <text-component></text-component>
+   <text-component></text-component>
+
+
+    </div>
+
+
+
+    <script src="/PrimeirosPassos/script.js"></script>
+</body>
+
+</html>

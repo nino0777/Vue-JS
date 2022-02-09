@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretivas v-on</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    
+    <div id="app">
+        
+    
+<button @click="reverseMessage()">Clique</button>
+
+<p @click="reverseMessage()"> {{message}} </p>
+
+
+<h4 v-on:click[eventname]="reverseMessage()"> {{message}} </h4>
+
+
+<input type="text" name="" placeholder="Filtrar pessoas" v-on:keyup="filterPersons()" id="">
+
+
+<ul>
+    <li v-for="person in person">{{person}}</li>
+</ul>
+
+
+    </div>
+
+
+
+    <script src="/PrimeirosPassos/script.js"></script>
+</body>
+
+</html>

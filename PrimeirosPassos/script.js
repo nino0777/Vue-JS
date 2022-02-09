@@ -1,43 +1,35 @@
+
+
 let app = new Vue({
     el: '#app',
     data: {
-show:true,
-tickets: 100
+
+       
+name: 'jadeilson'
+
     },
+    directives: {
+       
+    },
+    
     methods: {
-        beforeEnter() {
-            console.log('beforeEnter')
-        },
-        Enter() {
-            console.log('Enter')
-            
-        },
-        afterEnter(element) {
-            console.log('AfterEnter', element)
+ send(e) {
+     let form = e.target.form;
+     let data = new FormData(form);
 
-            document.querySelector('h1').style.background = '#CCC';
-            document.querySelector('h1').style.color = 'red';
-// de dev
-        },
-        enterCancelled() {
- console.log('EnterCancelled')
-        },
-        beforeLeave() {
-console.log('beforeLeave')
-        },
-        afterLeave() {
-console.log('afterLeave')
-        },
-        Leave() {
-console.log('Leave')
-        },
-        leaveCancelled() {
-            console.log('LeaveCancelled')
-
-        }
-    },
-    filters: {
-     
+     for(let value of  data.entries()) {
+         console.log(`${value[0]}: ${value[1]}`)
+     }
+    
+ },
+ exec(e) {
+     console.log(e.key)
+ }
+   },
+    
+    
+    computed: {
+   
     }
-
 })
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    
+    
+    <div id="app">
+
+
+
+
+<div class="container">
+    <form action="" class="form">
+        <div class="row">
+            <div class="col">
+                <div class="form-group"><label for="username">Nome</label>
+                    <input name="username" type="text" class="form-control"></div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="username">Email</label>
+                    <input name="username" type="email" class="form-control"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">digite sua mensagem</label>
+           <textarea name="message" class="form-control" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <button @click.prevent="send($event)" type:submit="" class="btn btn-primary">Enviar</button>
+    </form>
+
+
+    <hr>
+
+    <a href="https://hcode.com.br" @click.prevent.once="alert('Olá')">Youtube</a>
+</div>
+
+       
+    </div>
+
+
+
+    <script src="/PrimeirosPassos/script.js"></script>
+</body>
+
+</html>

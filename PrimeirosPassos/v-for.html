@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretivas v-for</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    
+    <div id="app">
+        
+        <h2>Cidades do Mundo</h2>
+    
+<ol>
+    <li v-for="item in cities"> {{item.city}} - {{item.country}}</li>
+</ol>
+
+
+
+<ul>
+    <li v-for="(picture, index) in movies">{{picture}} {{index}}</li>
+</ul>
+
+<h2>Empresa</h2>
+
+
+<p v-for="(value, key, index) in company">{{key}} {{value}} {{index}}</p>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="/PrimeirosPassos/script.js"></script>
+</body>
+
+</html>

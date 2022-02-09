@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações CSS personalizadas</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style>
+    .fade-transition-enter-active, .fade-transition-leave-active {
+        transition: opacity .3s ease-in-out;
+    }
+    .fade-transition-enter, .fade-transition-leave-to {
+        opacity: 0;
+    }
+</style>
+<body>
+
+
+    <div id="app">
+
+        <input type="text" name="" v-model="name" id="">
+<transition
+name="trasition-fade"
+>
+
+<h3 v-if="name == number" key="sucess" class="alert-success">Nome válido</h3>
+
+<h4 v-else="" key="error" class="alert-danger">Nome incorreto</h4>
+
+
+
+
+
+</transition>
+<button type="button" @click="show = !show">Realizar animação</button>
+
+    </div>
+
+
+
+    <script src="/PrimeirosPassos/script.js"></script>
+</body>
+
+</html>
